@@ -58,6 +58,8 @@ private:
   void newChart();
   ChartView *createChart();
   void removeChart(ChartView *chart);
+  void splitChart(ChartView *chart);
+  QRect chartVisibleRect(ChartView *chart);
   void eventsMerged();
   void updateState();
   void zoomReset();
@@ -65,6 +67,7 @@ private:
   void stopAutoScroll();
   void doAutoScroll();
   void updateToolBar();
+  void updateTabBar();
   void setMaxChartRange(int value);
   void updateLayout(bool force = false);
   void settingChanged();
